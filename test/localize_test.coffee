@@ -13,7 +13,7 @@ applyTagAttributes = (tag, attributes) ->
   if attributes.val?
     tag.val(attributes.val)
     delete attributes.val
-  tag.attr(k,v) for k, v of attributes
+  tag.attr(k, v) for k, v of attributes
   tag
 
 module "Basic Usage"
@@ -71,12 +71,12 @@ test "alternative file extension", ->
 
 moreSetup ->
   @t = $('
-    <select>
-      <optgroup rel="localize[test.optgroup]" label="optgroup fail">
-        <option rel="localize[test.option]" value="1">option fail</option>
-      </optgroup>
-    </select>
-  ')
+        <select>
+          <optgroup rel="localize[test.optgroup]" label="optgroup fail">
+            <option rel="localize[test.option]" value="1">option fail</option>
+          </optgroup>
+        </select>
+      ')
 
 test "optgroup tag label substitution", ->
   t = @t.find("optgroup")

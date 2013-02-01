@@ -1,6 +1,6 @@
 # jquery.localize.js
 
-## a jQuery plugin that makes it easy to i18n your static web site.
+## a jQuery plugin that makes it easy to localize your static web site.
 
 ## Synopsis
 
@@ -12,7 +12,7 @@
 
 ## Step 0. Load the jquery-localize plugin on your page.
 
-It's the file located at `build/jquery.localize.js`
+It's the file located at `src/jquery.localize.js`
 
 ## Step 1. Mark up tags whose content you want to be translated
 
